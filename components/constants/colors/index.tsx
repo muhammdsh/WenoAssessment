@@ -1,0 +1,16 @@
+export const colors = {
+  lightGray: "#F9FAFB",
+  darkGray: "#667085",
+  dark: "#121212",
+  naturalGray: "#D0D5DD",
+  naturalGray400: "#98A2B3",
+  naturalGray600: "#475467",
+  naturalGray900: "#101828",
+  borderGray: "#EEF2F6",
+  light: "#FFFFFF",
+  primaryColor: "#229AFC",
+  primary500: "#188EFC",
+  primary100: "#BAE3FF",
+  primary50: "#E6F6FF",
+  background: "#f9fafb",
+};
