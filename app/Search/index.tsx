@@ -26,11 +26,10 @@ const Index = () => {
         <SearchButton title="When?" icon={icons.profile.DateIcon} />
         <Box h={8} />
         <SearchButton title="Guests?" icon={icons.profile.UserIcon} />
-        <Box h={16} />
       </Box>
 
       <HistorySection />
-      <Box mt={32} paddingHorizontal={16}>
+      <Box mt={16} paddingHorizontal={16}>
         <SectionTitle title="Trips" />
       </Box>
       <Box flex={1} justifyContent="flex-end">

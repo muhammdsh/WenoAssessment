@@ -68,7 +68,7 @@ export default function Startup() {
             return (
               <VStack h="$full" key={e.id} flex={1} w={width}>
                 {e.background}
-                <Box w={width} sx={{ bottom: "19%" }} position="absolute">
+                <Box w={width} sx={{ bottom: "14%" }} position="absolute">
                   <VStack alignItems="center" paddingHorizontal={24} w={width}>
                     <Text
                       fontWeight="700"
@@ -92,7 +92,7 @@ export default function Startup() {
             );
           })}
         </Animated.ScrollView>
-        <Box sx={{ left: width / 2 - 30, bottom: "34%" }} position="absolute">
+        <Box sx={{ left: width / 2 - 30, bottom: "30%" }} position="absolute">
           <PageIndicator
             color="#188EFC"
             count={pages.length}
@@ -105,7 +105,7 @@ export default function Startup() {
           paddingHorizontal={24}
           w={width}
           position="absolute"
-          sx={{ bottom: "10%" }}
+          sx={{ bottom: "5%" }}
         >
           <Center>
             <PrimaryButton

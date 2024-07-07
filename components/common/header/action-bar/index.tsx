@@ -4,6 +4,7 @@ import { Box, HStack, Text } from "@gluestack-ui/themed";
 import { router } from "expo-router";
 import { ReactNode } from "react";
 import { SafeAreaView, TouchableOpacity } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function ActionBar({
   onReset,
@@ -12,12 +13,15 @@ export default function ActionBar({
   onReset?: () => void;
   onBack?: () => void;
 }) {
+  const insets = useSafeAreaInsets();
+
   return (
     <Box bgColor="white">
       <SafeAreaView />
       <HStack
+        mt={insets.top}
         paddingHorizontal={20}
-        height={56}
+        height={57}
         alignItems="center"
         borderBottomWidth={1}
         borderColor={colors.naturalGray}

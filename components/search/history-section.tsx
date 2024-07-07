@@ -1,6 +1,6 @@
 import { Box, FlatList } from "@gluestack-ui/themed";
-import SectionTitle from "../common/section-title";
 import { HistoryCard } from "./history-card";
+import { SectionTitle } from "./section-title";
 
 export const HistorySection = () => {
   const data: number[] = [1, 2, 3];

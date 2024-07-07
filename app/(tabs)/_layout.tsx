@@ -28,8 +28,8 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.primaryColor,
           tabBarLabelStyle: { fontWeight: "500" },
           tabBarStyle: {
-            paddingTop: 4,
-            height: 85,
+            paddingBottom: 16,
+            height: 70,
             borderTopColor: colors.light,
           },
           headerShown: useClientOnlyValue(false, true),

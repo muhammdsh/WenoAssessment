@@ -3,6 +3,7 @@ import { icons } from "@/components/constants/icons";
 import { Box, HStack } from "@gluestack-ui/themed";
 import { ReactNode } from "react";
 import { SafeAreaView, TouchableOpacity } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function AppBar({
   isExplore = false,
@@ -11,12 +12,16 @@ export default function AppBar({
   isExplore?: boolean;
   onTextChanged?: (value: string) => void;
 }) {
+  const insets = useSafeAreaInsets();
+
   return (
     <Box bgColor="white">
       <SafeAreaView />
       <HStack
+        marginTop={insets.top}
+        // bgColor="red"
         paddingHorizontal={20}
-        height={56}
+        height={57}
         alignItems="center"
         justifyContent="flex-end"
       >
